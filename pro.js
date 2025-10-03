@@ -5,7 +5,7 @@ const proposalMessages = [
   "You make my world complete!",
   "I can't imagine life without you!",
   "You're my everything!",
-  "Please say yes! I love you so much!",
+  "Please say yes! I like you so much!",
 ]
 
 // State
