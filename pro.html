@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Proposal</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <div id="app" class="app-container">
+         Background music 
+        <audio id="bgMusic" loop>
+            <source src="c:\Users\adars\Downloads\ytmp3free.cc_zehnaseeb-lyric-video-hasee-toh-phasee-sidharth-parineeti-chinmayi-s-shekhar-youtubemp3free.org.mp3" type="audio/mpeg">
+        </audio>
+
+         Floating elements container 
+        <div id="floatingElements"></div>
+
+         Earphone Popup 
+        <div id="earphonePopup" class="popup-overlay">
+            <div class="popup-box earphone-box">
+                <div class="icon-container music-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                </div>
+                <h2 class="popup-title">Plug in Your Earphones</h2>
+                <p class="popup-subtitle">For the best experience...</p>
+                <button id="pressMeBtn" class="btn btn-primary pulse-animation">Press Me</button>
+            </div>
+        </div>
+
+         Proposal Popup 
+        <div id="proposalPopup" class="popup-overlay hidden">
+            <div class="popup-box proposal-box">
+                <div class="icon-container heart-icon pulse-animation">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <h2 id="proposalText" class="proposal-text"></h2>
+                <div class="button-group">
+                    <button id="yesBtn" class="btn btn-yes">Yes!</button>
+                    <button id="noBtn" class="btn btn-no">No</button>
+                </div>
+                <p id="finalMessage" class="final-message hidden">You have only one choice now...</p>
+            </div>
+        </div>
+
+         Congratulations Screen 
+        <div id="congratsScreen" class="congrats-screen hidden">
+            <div class="congrats-content">
+                <div class="hearts-group">
+                    <svg class="heart-large pulse-animation" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <svg class="heart-xlarge pulse-animation delay-1" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <svg class="heart-large pulse-animation delay-2" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <h1 class="congrats-title color-shift">Congratulations!</h1>
+                <p class="congrats-subtitle">You made me the happiest person alive!</p>
+                <div class="decorative-icons">
+                    <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 3v18M3 12h18M6.34 6.34l11.32 11.32M6.34 17.66L17.66 6.34"></path>
+                    </svg>
+                    <svg class="flower-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0-3-3 3 3 0 0 0 0 6 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0 3 3 3 3 0 0 0 0-6 3 3 0 0 0-3 3"></path>
+                    </svg>
+                    <svg class="heart-icon-small pulse-animation" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <svg class="flower-icon delay-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0-3-3 3 3 0 0 0 0 6 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0 3 3 3 3 0 0 0 0-6 3 3 0 0 0-3 3"></path>
+                    </svg>
+                    <svg class="sparkle-icon delay-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 3v18M3 12h18M6.34 6.34l11.32 11.32M6.34 17.66L17.66 6.34"></path>
+                    </svg>
+                </div>
+                <p class="congrats-footer">I love you so much!</p>
+            </div>
+        </div>
+
+         Get Ready Screen 
+        <div id="getReadyScreen" class="get-ready-screen hidden">
+            <div class="get-ready-content">
+                <svg class="heart-ready pulse-animation" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <h1 class="ready-title">Get Ready...</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="pro.js"></script>
+</body>
+</html>
