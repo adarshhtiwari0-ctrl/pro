@@ -1,11 +1,11 @@
 // Proposal messages
 const proposalMessages = [
-  "Will you be mine Ritika?",
+  "Will you be mine?",
   "I promise to make you smile every day!",
-  "You make my world complete Ritika!",
+  "You make my world complete!",
   "I can't imagine life without you!",
   "You're my everything!",
-  "Please say yes! I like you so much Ritika!",
+  "Please say yes! I like you so much!",
 ]
 
 // State
