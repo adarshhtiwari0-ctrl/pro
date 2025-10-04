@@ -10,7 +10,7 @@ const proposalMessages = [
 
 // State
 let proposalIndex = 0
-let musicStarted = false
+let musicStarted = true
 
 // DOM Elements
 const app = document.getElementById("app")
